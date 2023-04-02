@@ -11,6 +11,7 @@ async function getCommits() {
     let select_l = document.getElementById('select_l'); // список для дешевых валют
     let select_r = document.getElementById('select_r');
     dataRates = data.rates; // инфв о валютах
+    console.log(dataRates.value)
     
     for (let key in dataRates) {
         if(dataRates[key]>1) {
@@ -22,7 +23,7 @@ async function getCommits() {
             select_r.append(newOption);
         }
     }
-
+    
     
     let l1 = document.getElementById('l1')
     let l2 = document.getElementById('l2')
@@ -46,6 +47,16 @@ async function getCommits() {
             l5.innerHTML=vol + ` = ` + dataRates[vol]
         }
     }
+    let btn_l = document.getElementById('btn_l')
+    
+    select_l.addEventListener('change', (event)=>{
+        
+        btn_l.addEventListener('click', (event1)=>{
+            for (let key in dataRates) {
+                
+            }
+        })
+    })
 
 
 }
