@@ -1,13 +1,12 @@
-#date{
-    padding: 20px 0px;
-    width: 200px;
+.date_content{
     text-align: center;
-    border: #4191cb solid 1px;
+    padding: 10px 0px;
+    width: 200px;
+    border: #4143cb solid 1px;
     border-radius: 10px;
-    font-size: 25px;
-    font-weight: bold;
-
+    font-size: 20px;
 }
+
 
 .five_v{
     padding: 20px;
